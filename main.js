@@ -3,5 +3,11 @@ $(document).ready(function() {
 
   $('.header_info a').click(function(e) {
     $('.header_info').slideUp();
-  })
+  });
+
+  $('.carousel-images').slick({
+    dots: true,
+    autoplay: true
+  }) 
+  
 })
