@@ -1,16 +1,27 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --yellow-color: #ffff00;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 /*lg screen*/
 @media screen and (min-width: 1200px) {
+  /*header info*/
   .header_info {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffff00;
+    background-color: var(--yellow-color);
     height: 3em;
     text-align: center;
     padding: 1em;
@@ -25,6 +36,121 @@
   .header_info a span img{
     max-height: 1.5em;
   }
+
+  /*navbar*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 3px 0px rgba(0,0,0,0.5);
+  }
+
+  /*navbar menu*/
+  .navbar_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    margin-left: 1em;
+  }
+
+  .navbar_menu a {
+    text-decoration: none;
+    color: var(--black-color);
+  }
+
+  .navbar_menu figure img {
+    height: 1.5em;
+    width: 2.5em;
+    margin-bottom: 0;
+    color: var(--black-color);
+  }
+
+  .navbar_menu figure figcaption {
+    font-size: 0.85em;
+  }
+
+  /*navbar search*/
+  .navbar_search {
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 18em;
+  }
+
+  .navbar_search > a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 0.2em 0.5em;
+    margin-right: 2em;
+    background-color: #0C15FE;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+
+  }
+  form input{
+    padding: 0.5em;
+  }
+
+  #search {
+    width: 30em;
+  }
+
+  #search:focus {
+    outline: none;
+  }
+
+  input::placeholder {
+    text-transform: uppercase;
+  } 
+  form button img {
+    height: 1.8em;
+  }
+  
+  /*navbar options*/
+  nav ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar ul li a img {
+    height: 30px;
+  }
+  
+  nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow-color);
+    height: 4.2em;
+    width: 4em;
+  }
+
+  .navbar_options a{
+    margin-left: 1em;
+  }
+
+  .navbar_options a:last-child{
+    margin-right: 1em;
+  }
+
 
 }
 
