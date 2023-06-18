@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('.navbar_menu').click(function(e) {
     e.preventDefault();
     $('.menu').animate({left: 'toggle',
-    }, 50);
+    }, 0);
     $('body > div').toggleClass('body_page');
   }) 
 })

@@ -20,9 +20,6 @@
   /*menu*/
   .menu {
     display: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: #0000ff;
   }
 
