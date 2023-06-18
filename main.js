@@ -11,7 +11,9 @@ $(document).ready(function() {
   }) 
   
   $('.navbar_menu').click(function(e) {
-    $('.menu').animate({left: 'toggle'});
+    e.preventDefault();
+    $('.menu').animate({left: 'toggle',
+    }, 50);
     $('body > div').toggleClass('body_page');
   }) 
 })
