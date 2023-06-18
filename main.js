@@ -10,4 +10,8 @@ $(document).ready(function() {
     autoplay: true
   }) 
   
+  $('.navbar_menu').click(function(e) {
+    $('.menu').animate({left: 'toggle'});
+    $('body > div').toggleClass('body_page');
+  }) 
 })

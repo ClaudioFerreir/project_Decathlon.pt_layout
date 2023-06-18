@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body_page {
   font-family: 'Poppins', sans-serif;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -29,19 +29,36 @@ body {
     list-style: none;
   }
 
+  .option_sections li:last-child {
+    background-color: #ff0000;
+  }
+
+  .option_sections li:last-child:hover {
+    background-color: #fd5050;
+  }
+
+  .option_sections li:hover {
+    background-color: #3a40fd;
+  }
+
   .menu ul li a {
     text-decoration: none;
     color: var(--white-color);
-    padding: 0.5em 1em;
+    padding: 1em 1em;
   }
 
   .option_sections {
-    padding-top: 7em;
+    padding-top: 7.2em;
   }
 
   .option_sections li a{
     display: block;
-    margin-bottom: 1em;
+    padding-bottom: em;
+  }
+
+  .option_shop {
+    display: flex;
+    justify-content: center;
   }
 
   /*header info*/
