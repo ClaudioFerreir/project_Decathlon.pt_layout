@@ -10,8 +10,15 @@
   box-sizing: border-box;
 }
 
-.body_page {
+body {
   font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 2000px;
+}
+
+.body_page {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: 100vh auto;
@@ -51,7 +58,6 @@
 
   .option_sections li a{
     display: block;
-    padding-bottom: em;
   }
 
   .option_shop {
@@ -120,20 +126,21 @@
 
   .container {
     width: 90%;
-    margin-left: 4em;
   }
-
+  
   .navbar .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .navbar_search > a {
+    font-weight: bold;
     text-decoration: none;
     color: var(--white-color);
     padding: 0.2em 0.5em;
     margin-right: 2em;
+    margin-left: 4em;
     background-color: #0C15FE;
   }
 
@@ -201,7 +208,7 @@
 
   .carousel-images {
     z-index: -1;
-    width: 80%;
+    width: 90%;
   }
 
   .carousel-images img {
