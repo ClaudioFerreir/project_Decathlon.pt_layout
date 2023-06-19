@@ -2,6 +2,7 @@
   --black-color: #000;
   --white-color: #fff;
   --yellow-color: #ffff00;
+  --vertical-margin: 3em;
 }
 
 * {
@@ -126,6 +127,7 @@ body {
 
   .container {
     width: 90%;
+    margin: 0 auto;
   }
   
   .navbar .container {
@@ -214,6 +216,116 @@ body {
   .carousel-images img {
     width: 100%;
     height: 80vh;
+  }
+
+  /*section tags*/
+  .section_tags {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
+    margin: var(--vertical-margin) auto;
+  }
+
+  .section_tags li{
+    list-style: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 8px;
+  }
+
+  .section_tags li:hover{
+    background-color: #7a7a7a;
+  }
+  
+  .section_tags li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+  }
+
+  /*images sections cards*/
+  .image_sections {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 6fr 1fr;
+    gap: 0 2em;
+  }
+
+  .image_sections li {
+    list-style: none;
+  }
+
+  .image_sections li a {
+    text-decoration: none;
+    color: var(--black-color);
+  }
+
+  .image_sections li a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  /*Produtos Seção 1*/
+  .products_section1 {
+    margin-top: var(--vertical-margin);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:  repeat(2, 300px);
+    gap: 2em 2em;
+  }
+
+  .products_section1 li {
+    list-style: none;
+    background-color: #ccc;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .products_section1 li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .products_section1 li a p {
+    background-color: var(--yellow-color);
+    text-align: right;
+  }
+
+  .products_section1 li a img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mini-banner {
+    background-image: url('./images/mini-banner-option1.jpg');
+    background-size: cover;
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .mini-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .products_section1 {
+    margin-bottom: var(--vertical-margin);
   }
 
 /*md screen*/
