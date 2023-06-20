@@ -2,6 +2,7 @@
   --black-color: #000;
   --white-color: #fff;
   --yellow-color: #ffff00;
+  --blue-color: #0000ff;
   --vertical-margin: 3em;
 }
 
@@ -28,7 +29,7 @@ body {
   /*menu*/
   .menu {
     display: none;
-    background-color: #0000ff;
+    background-color: var(--blue-color);
   }
 
   .menu ul li {
@@ -143,7 +144,7 @@ body {
     padding: 0.2em 0.5em;
     margin-right: 2em;
     margin-left: 4em;
-    background-color: #0C15FE;
+    background-color: var(--blue-color);
   }
 
   form {
@@ -344,6 +345,76 @@ body {
     background-size: cover;
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
+  }
+
+  /*brands section*/
+  .brands > p {
+    margin-top: var(--vertical-margin);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .best_brands {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
+    margin: var(--vertical-margin) auto;
+  }
+
+  .best_brands li{
+    list-style: none;
+    border-radius: 5px;
+    padding: 8px;
+    height: 100%;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+  }
+
+  .best_brands li a img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .best_brands li a img:first-child {
+    height: 60px;
+  }
+
+  .best_brands li:last-child a img {
+    height: 30px;
+  }
+
+  .best_brands li:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /*Footer*/
+  footer ul {
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3fr 1fr;
+    gap: 1em;
+    list-style: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: 1em;
+  }
+
+  footer ul li {
+    text-align: center;
+  }
+
+  footer ul li:last-child {
+    font-size: 0.8em;
+    text-transform: capitalize;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
   }
 
 
