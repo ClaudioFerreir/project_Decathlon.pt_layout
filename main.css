@@ -22,7 +22,7 @@ body {
 .body_page {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 100vh auto;
+  grid-template-rows: 1 / 2;
 }
 
   /*menu*/
@@ -272,22 +272,24 @@ body {
   }
 
   /*Produtos Seção 1*/
-  .products_section1 {
-    margin-top: var(--vertical-margin);
+  .products_section1,
+  .products_section2 {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows:  repeat(2, 300px);
     gap: 2em 2em;
+    margin-top: var(--vertical-margin);
   }
 
-  .products_section1 li {
+  .products_section1 li,
+  .products_section2 li {
     list-style: none;
-    background-color: #ccc;
     border-radius: 5px;
     border: 1px solid #ccc;
   }
   
-  .products_section1 li a {
+  .products_section1 li a,
+  .products_section2 li a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,7 +302,8 @@ body {
     text-align: right;
   }
 
-  .products_section1 li a img {
+  .products_section1 li a img,
+  .products_section2 li a img {
     width: 100%;
     height: 50%;
   }
@@ -327,6 +330,22 @@ body {
   .products_section1 {
     margin-bottom: var(--vertical-margin);
   }
+
+  /*Products Section 2*/
+  .products_section2 {
+    margin-top: var(--vertical-margin);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .mini-banner2 {
+    background-image: url("./images/mini-banner-section1.jpg");
+    background-size: cover;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+  }
+
 
 /*md screen*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
