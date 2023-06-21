@@ -338,7 +338,7 @@ body {
   }
 
   h3 {
-    margin-top: 1em;
+    margin-top: 0em;
     font-size: 1em;
     text-align: center;
     color: var(--black-color);
@@ -347,7 +347,7 @@ body {
 
   .products_section1 li a p,
   .products_section2 li a p {
-    margin: 0.3em 0.7em;
+    margin: 0.2em 0.7em;
     font-size: 0.7em;
     text-align: center;
     color: var(--black-color);
@@ -425,11 +425,21 @@ body {
   }
 
   .best_brands li a img:first-child {
-    height: 60px;
+    height: 70px;
   }
 
   .best_brands li:last-child a img {
-    height: 30px;
+    height: 25px;
+  }
+
+  .best_brands li:nth-child(4) a img {
+    height: 45px;
+  }
+
+  .best_brands li:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .best_brands li:last-child {
