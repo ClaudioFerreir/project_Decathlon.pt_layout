@@ -287,21 +287,46 @@ body {
     list-style: none;
     border-radius: 5px;
     border: 1px solid #ccc;
+    position: relative;
   }
   
   .products_section1 li a,
   .products_section2 li a {
-
+    text-decoration: none;
   }
 
-  .products_section1 li a p,
-  .products_section2 li a p {
+  .price {
+    letter-spacing: 0.1em;
+    font-weight: bold;
     display: block;
     background-color: var(--yellow-color);
     padding: 5px 8px;
     border-radius: 6px;
     margin-left: auto;
     width: fit-content;
+    position: absolute;
+    top:5px;
+    right: 5px;
+  }
+
+  .offer-price {
+    background-color: #ff0000;
+    position: absolute;
+    top: 17px;
+    right: 5px;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    font-weight: bold;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+  }
+
+  .original-price span {
+    text-decoration: none;
+    color: #ff0000;
   }
 
   .products_section1 li a img,
@@ -309,6 +334,24 @@ body {
     display: block;
     width: 100%;
     height: 50%;
+    margin: 30px auto 0 auto;
+  }
+
+  h3 {
+    margin-top: 1em;
+    font-size: 1em;
+    text-align: center;
+    color: var(--black-color);
+    text-transform: uppercase;
+  }
+
+  .products_section1 li a p,
+  .products_section2 li a p {
+    margin: 0.3em 0.7em;
+    font-size: 0.7em;
+    text-align: center;
+    color: var(--black-color);
+    text-transform: uppercase;
   }
 
   .mini-banner {
