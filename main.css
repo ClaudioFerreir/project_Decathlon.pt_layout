@@ -291,20 +291,22 @@ body {
   
   .products_section1 li a,
   .products_section2 li a {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    text-decoration: none;
+
   }
 
-  .products_section1 li a p {
+  .products_section1 li a p,
+  .products_section2 li a p {
+    display: block;
     background-color: var(--yellow-color);
-    text-align: right;
+    padding: 5px 8px;
+    border-radius: 6px;
+    margin-left: auto;
+    width: fit-content;
   }
 
   .products_section1 li a img,
   .products_section2 li a img {
+    display: block;
     width: 100%;
     height: 50%;
   }
@@ -312,6 +314,7 @@ body {
   .mini-banner {
     background-image: url('./images/mini-banner-option1.jpg');
     background-size: cover;
+    background-position: center;
     grid-row-start: 1;
     grid-row-end: -1;
     grid-column-start: 4;
@@ -343,6 +346,7 @@ body {
   .mini-banner2 {
     background-image: url("./images/mini-banner-section1.jpg");
     background-size: cover;
+    background-position: center;
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
   }
