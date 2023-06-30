@@ -156,11 +156,44 @@ body {
     height: 100%;
   }
 
-  .car-shop a img {
-    height: 2em;
+  .car-shop a i {
+    font-size: 1.5em;
+  }
+
+  /*lateral navibar*/
+  #offcanvasExample {
+    background-color: var(--blue-color);
   }
   
+  #offcanvasExampleLabel {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--white-color);
+  }
+
+  .btn-close {
+    color: var(--white-color);
+  }
   
+  .option_sections,
+  .option_shop {
+    list-style: none;
+  }
+
+  .option_sections li a,
+  .option_shop li a {
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 1em;
+  }
+
+  .offcanvas-body > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
   /*carousel*/
   .main_banner {
     display: flex;
