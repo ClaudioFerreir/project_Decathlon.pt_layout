@@ -149,6 +149,10 @@ body {
     width: 4em;
   }
 
+  .rounded-pill {
+    font-size: 10px;
+  }
+
   .car-shop a {
     display: flex;
     justify-content: center;
@@ -209,6 +213,20 @@ body {
     width: 100%;
     height: 80vh;
     object-fit: cover;
+  }
+
+  /*container*/
+  .container {
+    margin: 0 auto;
+    padding: 1em 3em;
+  }
+
+  .container ul {
+    padding: 0;
+  }
+
+  .best_brands li {
+    height: fit-content;
   }
 
   /*section tags*/
