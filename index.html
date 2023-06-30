@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Decathlon Clone</title>
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./main.css">
   <!-- Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,91 +11,102 @@
   <!--Slick CSS-->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <div id="page" class="">
-    <!--Lateral Menu-->
-    <div class="menu">
-      <ul class="option_sections">
-        <li>
-          <a href="#">Esportes</a>
-        </li>
-        <li>
-          <a href="#">Mulher</a>
-        </li>
-        <li>
-          <a href="#">Homem</a>
-        </li>
-        <li>
-          <a href="#">Criança</a>
-        </li>
-        <li>
-          <a href="#">Acessórios</a>
-        </li>
-        <li>
-          <a href="#">Ofertas</a>
-        </li>
-      </ul>
-      <ul class="option_shop">
-        <li>
-          <a href="#"><span>SportShop</span> 20 anos</a>
-        </li>
-      </ul>
-    </div>
-    <div class="main_page">
-      <!--Info Header-->
-      <div class="header">
-        <div class="header_info">
-          <a href="#">BAIXAS DE PREÇO são + de 400 produtos. <span><img src="./images/icons8-cancel-50.png" alt="icon de cancelar"></span></a>
-        </div>
-        <!--Navbar-->
-        <nav class="navbar">
-          <div class="navbar_menu">
-            <a href="#">
-              <figure>
-                <img src="./images/icons8-menu-50.png" alt="menu icone">
-                <figcaption>menu</figcaption>
-              </figure>
-            </a>
-          </div>
-          <div class="container">
-            <div class="navbar_search">
-              <a href="#">SportShop</a>
-              <form>
-                <input type="text" name="search" id="search" placeholder="pesquisa um produto, esporte ">
-                <button type="submit"><span>
-                  <img src="./images/icons8-search-50.png" alt="icone de pesquisa">
-                </span></button>
+  <div class="main_page">
+    <!--Info Header-->
+    <div class="header">
+      <div class="header_info">
+        <a href="#">BAIXAS DE PREÇO são + de 400 produtos. <span><img src="./images/icons8-cancel-50.png" alt="icon de cancelar"></span></a>
+      </div>
+      <!--Navbar-->
+
+        <div class="_navbar">
+          <div class="left_navbar">
+            <nav class="brand_sections">
+              <div id="lateral-menu">
+                <a class="menu-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <img src="./images/icons8-menu-50.png" alt="">
+                </a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div>
+                      <ul class="option_sections">
+                        <li>
+                          <a href="#">Esportes</a>
+                        </li>
+                        <li>
+                          <a href="#">Mulher</a>
+                        </li>
+                        <li>
+                          <a href="#">Homem</a>
+                        </li>
+                        <li>
+                          <a href="#">Criança</a>
+                        </li>
+                        <li>
+                          <a href="#">Acessórios</a>
+                        </li>
+                        <li>
+                          <a href="#">Ofertas</a>
+                        </li>
+                      </ul>
+                      <ul class="option_shop">
+                        <li>
+                          <a href="#"><span>SportShop</span> 20 anos</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="brand">SportShop</a>
+              <form class="search" role="search">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder="PESQUISE UM PRODUTO, ESPORTE..." aria-label="Search">
+                  <button class="btn btn-outline-success"><img src="./images/icons8-search-50.png"></button>
+                </div>
               </form>
-            </div>
-            <ul class="navbar_options">
-                <li>
-                  <a href="#">
-                    <img src="./images/icons8-help-50.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icons8-shop-50.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icons8-person-64.png" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="./images/icons8-favorite-50.png" alt="">
-                  </a>
-                </li>
+            </nav>
+            <ul class="items-nav">
+              <li class="item">
+                <a href="#" class="nav-link">
+                  <img src="./images/icons8-help-50.png" alt="">
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="nav-link">
+                  <img src="./images/icons8-shop-50.png" alt="">
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="nav-link">
+                  <img src="./images/icons8-person-64.png" alt="">
+                </a>
+              </li>
+              <li class="item">
+                <a href="#" class="nav-link">
+                  <img src="./images/icons8-favorite-50.png" alt="">
+                </a>
+              </li>
             </ul>
           </div>
-          <a href="#">
-            <img src="./images/icons8-shop-24.png" alt="">
-          </a>
-        </nav>
-      </div>
+          <div class="car-shop">
+            <a href="#" class="nav-link">
+              <img src="./images/icons8-shop-24.png" alt="">
+            </a>
+          </div>
+        </div>
+
+    </div>
       <!--Carousel-->
       <div class="main_banner">
         <div class="carousel-images">
@@ -107,239 +116,240 @@
           <img src="./images/wheaton-simis-sBg4-N4vf4A-unsplash.jpg" alt="">
         </div>
       </div>
-      <!--Section Tags-->
-      <div class="container">
-        <ul class="section_tags">
+    <!--Section Tags-->
+    <div class="container">
+      <ul class="section_tags">
+        <li>
+          <a href="#">esportes</a>
+        </li>
+        <li>
+          <a href="#">mulher</a>
+        </li>
+        <li>
+          <a href="#">homem</a>
+        </li>
+        <li>
+          <a href="#">criança</a>
+        </li>
+        <li>
+          <a href="#">acessórios</a>
+        </li>
+        <li>
+          <a href="#">ofertas</a>
+        </li>
+      </ul>
+      <!-- sections images-->
+      <ul class="image_sections">
+        <li>
+          <a href="#">
+            <img src="./images/offerPhoto.jpg" alt="imagem de piscina">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/piscinas.jpg" alt="imagem de piscina">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/barracaCampismo-card.jpg" alt="barraca de campismo">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/praiaArtigos-card.jpg" alt="artigos de praia">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/modaPraia-card.jpg" alt="moda praia">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="./images/bicicletas.jpg" alt="moda praia">
+          </a>
+        </li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Piscina</a></li>
+        <li><a href="#">Campismo</a></li>
+        <li><a href="#">Praia</a></li>
+        <li><a href="#">Vestuário</a></li>
+        <li><a href="#">Ciclismo</a></li>
+      </ul>
+      <!--Section Produtos-->
+      <ul class="products_section1">
+        <li>
+          <a href="#">
+            <p class="price">R$ 30,00</p>
+            <img src="./images/produto1.avif" alt="quechua">
+            <h3>quechua</h3>
+            <p>abrigo solar de campismo - 2 seconds 1P</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="price">R$ 20,00</p>
+            <img src="./images/produto2.avif" alt="nabaiji">
+            <h3>nabaiji</h3>
+            <p>piscina pequena criança azul com saco de ...</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="price">R$ 400,00</p>
+            <img src="./images/produto3.avif" alt="bestway">
+            <h3>bestway</h3>
+            <p>piscina steel pro max tubular 457X122cm</p>
+          </a>
+        </li>
+        <li class="mini-banner">
+          <a href="#">              
+            <h3>Prepara-te para o calor!</h3>
+            <p>O verão faz-nos bem!</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="price">R$ 30,00</p>
+            <img src="./images/produto4.avif" alt="decathlon">
+            <h3>decathlon</h3>
+            <p>guarda-sol praia paruv windstop turquesa amarela</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="price">R$ 15,00</p>
+            <img src="./images/produto5.avif" alt="decathlon">
+            <h3>decathlon</h3>
+            <p>toalha praia fouta 86X170 riscas azul</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="price">R$ 17,00</p>
+            <img src="./images/produto6.avif" alt="sandever">
+            <h3>sandever</h3>
+            <p>raquetes de praia frescobol 190 (conjunto)</p>
+          </a>
+        </li>
+      </ul>
+      <ul class="products_section2">
+        <li class="mini-banner2">
+          <a href="#">
+            <h3>Ofertas</h3>
+            <p>Até 50% de desconto, aproveite já!</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 30,00 <span>-10%</span></p>
+            <p class="price offer-price">R$ 179,00</p>
+            <img src="./images/produto21.avif" alt="tenis">
+            <h3>domyos</h3>
+            <p>trampolim hexagonal 240 com rede de proteção</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 575,00 <span>-17%</span></p>
+            <p class="price offer-price">R$ 475,00</p>
+            <img src="./images/produto22.avif" alt="tenis">
+            <h3>cornilleau</h3>
+            <p>mesa de ping pong free cornilleau 200X outdoor...</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 65,00 <span>-30%</span></p>
+            <p class="price offer-price">R$ 45,00</p>
+            <img src="./images/produto23.avif" alt="tenis">
+            <h3>adidas</h3>
+            <p>calçado de caminhada adidas advantage base...</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 475,00 <span>-7%</span></p>
+            <p class="price offer-price">R$ 439,00</p>
+            <img src="./images/produto24.avif" alt="tenis">
+            <h3>trébol advance</h3>
+            <p>equipamento profissional de pressoterapia</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 410,00 <span class="discount">-14%</span></p>
+            <p class="price offer-price">R$ 349,00</p>
+            <img src="./images/produto25.avif" alt="tenis">
+            <h3>xiaomi</h3>
+            <p>trotinete elétrica xiaomi 3 lite</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="original-price">R$ 30,00 <span>-7%</span></p>
+            <p class="price offer-price">R$ 12,00</p>
+            <img src="./images/produto26.avif" alt="tenis">
+            <h3>nabaiji</h3>
+            <p>boia insuflável de piscina com assento para bebé de ...</p>
+          </a>
+        </li>
+      </ul>
+      <!--Best Brands section-->
+      <section class="brands">
+        <p>Grandes Marcas</p>
+        <ul class="best_brands">
           <li>
-            <a href="#">esportes</a>
+            <a href="#">
+              <img src="./images/marca1.webp" alt="">
+            </a>
           </li>
           <li>
-            <a href="#">mulher</a>
+            <a href="#">
+              <img src="./images/marca2.avif" alt="">
+            </a>
           </li>
           <li>
-            <a href="#">homem</a>
+            <a href="#">
+              <img src="./images/marca3.avif" alt="">
+            </a>
           </li>
           <li>
-            <a href="#">criança</a>
+            <a href="#">
+              <img src="./images/marca4.avif" alt="">
+            </a>
           </li>
           <li>
-            <a href="#">acessórios</a>
+            <a href="#">
+              <img src="./images/marca5.avif" alt="">
+            </a>
           </li>
           <li>
-            <a href="#">ofertas</a>
+            <a href="#">
+              <img src="./images/marca6.avif" alt="">
+            </a>
           </li>
         </ul>
-        <!-- sections images-->
-        <ul class="image_sections">
-          <li>
-            <a href="#">
-              <img src="./images/offerPhoto.jpg" alt="imagem de piscina">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/piscinas.jpg" alt="imagem de piscina">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/barracaCampismo-card.jpg" alt="barraca de campismo">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/praiaArtigos-card.jpg" alt="artigos de praia">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/modaPraia-card.jpg" alt="moda praia">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/bicicletas.jpg" alt="moda praia">
-            </a>
-          </li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Piscina</a></li>
-          <li><a href="#">Campismo</a></li>
-          <li><a href="#">Praia</a></li>
-          <li><a href="#">Vestuário</a></li>
-          <li><a href="#">Ciclismo</a></li>
-        </ul>
-        <!--Section Produtos-->
-        <ul class="products_section1">
-          <li>
-            <a href="#">
-              <p class="price">R$ 30,00</p>
-              <img src="./images/produto1.avif" alt="quechua">
-              <h3>quechua</h3>
-              <p>abrigo solar de campismo - 2 seconds 1P</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="price">R$ 20,00</p>
-              <img src="./images/produto2.avif" alt="nabaiji">
-              <h3>nabaiji</h3>
-              <p>piscina pequena criança azul com saco de ...</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="price">R$ 400,00</p>
-              <img src="./images/produto3.avif" alt="bestway">
-              <h3>bestway</h3>
-              <p>piscina steel pro max tubular 457X122cm</p>
-            </a>
-          </li>
-          <li class="mini-banner">
-            <a href="#">              
-              <h3>Prepara-te para o calor!</h3>
-              <p>O verão faz-nos bem!</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="price">R$ 30,00</p>
-              <img src="./images/produto4.avif" alt="decathlon">
-              <h3>decathlon</h3>
-              <p>guarda-sol praia paruv windstop turquesa amarela</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="price">R$ 15,00</p>
-              <img src="./images/produto5.avif" alt="decathlon">
-              <h3>decathlon</h3>
-              <p>toalha praia fouta 86X170 riscas azul</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="price">R$ 17,00</p>
-              <img src="./images/produto6.avif" alt="sandever">
-              <h3>sandever</h3>
-              <p>raquetes de praia frescobol 190 (conjunto)</p>
-            </a>
-          </li>
-        </ul>
-        <ul class="products_section2">
-          <li class="mini-banner2">
-            <a href="#">
-              <h3>Ofertas</h3>
-              <p>Até 50% de desconto, aproveite já!</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 30,00 <span>-10%</span></p>
-              <p class="price offer-price">R$ 179,00</p>
-              <img src="./images/produto21.avif" alt="tenis">
-              <h3>domyos</h3>
-              <p>trampolim hexagonal 240 com rede de proteção</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 575,00 <span>-17%</span></p>
-              <p class="price offer-price">R$ 475,00</p>
-              <img src="./images/produto22.avif" alt="tenis">
-              <h3>cornilleau</h3>
-              <p>mesa de ping pong free cornilleau 200X outdoor...</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 65,00 <span>-30%</span></p>
-              <p class="price offer-price">R$ 45,00</p>
-              <img src="./images/produto23.avif" alt="tenis">
-              <h3>adidas</h3>
-              <p>calçado de caminhada adidas advantage base...</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 475,00 <span>-7%</span></p>
-              <p class="price offer-price">R$ 439,00</p>
-              <img src="./images/produto24.avif" alt="tenis">
-              <h3>trébol advance</h3>
-              <p>equipamento profissional de pressoterapia</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 410,00 <span class="discount">-14%</span></p>
-              <p class="price offer-price">R$ 349,00</p>
-              <img src="./images/produto25.avif" alt="tenis">
-              <h3>xiaomi</h3>
-              <p>trotinete elétrica xiaomi 3 lite</p>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <p class="original-price">R$ 30,00 <span>-7%</span></p>
-              <p class="price offer-price">R$ 12,00</p>
-              <img src="./images/produto26.avif" alt="tenis">
-              <h3>nabaiji</h3>
-              <p>boia insuflável de piscina com assento para bebé de ...</p>
-            </a>
-          </li>
-        </ul>
-        <!--Best Brands section-->
-        <section class="brands">
-          <p>Grandes Marcas</p>
-          <ul class="best_brands">
-            <li>
-              <a href="#">
-                <img src="./images/marca1.webp" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/marca2.avif" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/marca3.avif" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/marca4.avif" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/marca5.avif" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./images/marca6.avif" alt="">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
-      <!--Footer-->
-      <footer>
-        <ul>
-          <li>Entregas ao domicílio grátis a partir de R$ 29</li>
-          <li>Recolhe na loja em 2h grátis</li>
-          <li>Trocas/Devoluções gratuitas até 2 anos para clientes clube</li>
-          <li>Pagamentos 100% seguros</li>
-          <li>SportShop - Copyright &copy; Todos direitos reservados 2023 - Page created by Claudio Ferreira</li>
-        </ul>
-      </footer>
+      </section>
     </div>
-  </div>  
+    <!--Footer-->
+    <footer>
+      <ul>
+        <li>Entregas ao domicílio grátis a partir de R$ 29</li>
+        <li>Recolhe na loja em 2h grátis</li>
+        <li>Trocas/Devoluções gratuitas até 2 anos para clientes clube</li>
+        <li>Pagamentos 100% seguros</li>
+        <li>SportShop - Copyright &copy; Todos direitos reservados 2023 - Page created by Claudio Ferreira</li>
+      </ul>
+    </footer>
+  </div>
   <!-- JQuery-->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <!--Slick JS-->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--Bootstrap JS--> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
   <!-- Custom JS-->
   <script src="./main.js"></script>
 </body>
