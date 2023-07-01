@@ -298,7 +298,7 @@ body {
   .products_section2 li {
     list-style: none;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc6b;
     position: relative;
   }
   
@@ -531,8 +531,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
   }
-  .image_sections,
-  .best_brands {
+  .image_sections {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 3em 2em;
@@ -544,10 +543,16 @@ body {
 
   .best_brands {
     gap: 1em 1em;
+    max-height: 10%;
   }
 
-  .best_brands li {
-    height: 5em;
+  .best_brands li{
+    padding: 0 8px;
+  }
+
+  .products_section1,
+  .products_section2 {
+    gap: .5em .5em;
   }
 
   .products_section1 li:nth-child(1),
@@ -555,6 +560,11 @@ body {
   .products_section2 li:nth-child(5),
   .products_section2 li:nth-child(6) {
     display: none;
+  }
+
+  .products_section1 h3,
+  .products_section2 h3 {
+    margin-top: 0;
   }
 
   .mini-banner {
