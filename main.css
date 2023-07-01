@@ -531,8 +531,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
   }
-  .image_sections,
-  .best_brands {
+  .image_sections {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     gap: 3em 2em;
@@ -544,10 +543,11 @@ body {
 
   .best_brands {
     gap: 1em 1em;
+    max-height: 10%;
   }
 
-  .best_brands li {
-    height: 5em;
+  .best_brands li{
+    padding: 0 8px;
   }
 
   .products_section1,
