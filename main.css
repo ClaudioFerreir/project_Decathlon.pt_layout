@@ -337,7 +337,6 @@ body {
   }
 
   .original-price span {
-    text-decoration: none;
     color: #ff0000;
   }
 
@@ -527,7 +526,14 @@ body {
 
 /*md screen*/
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
+  .section_tags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image_sections {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 3em 2em;
+  }
 }
 
 /*sm screen*/
