@@ -550,11 +550,21 @@ body {
     height: 5em;
   }
 
+  .products_section1,
+  .products_section2 {
+    gap: .5em .5em;
+  }
+
   .products_section1 li:nth-child(1),
   .products_section1 li:nth-child(3),
   .products_section2 li:nth-child(5),
   .products_section2 li:nth-child(6) {
     display: none;
+  }
+
+  .products_section1 h3,
+  .products_section2 h3 {
+    margin-top: 0;
   }
 
   .mini-banner {
