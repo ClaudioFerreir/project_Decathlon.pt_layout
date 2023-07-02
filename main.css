@@ -502,13 +502,13 @@ body {
   }
 
   footer ul {
-    font-size: 0.9em;
-    font-weight: bold;
-    text-transform: uppercase;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 3fr 1fr;
     gap: 1em;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-transform: uppercase;
     list-style: none;
     background-color: var(--blue-color);
     color: var(--white-color);
@@ -686,5 +686,38 @@ body {
     bottom: 10px;
     left: 10px;
     padding: 0;
+  }
+
+  /*best brands section*/
+  .brands p {
+    padding-top: 0;
+    margin-top: 2em;
+  }
+  
+  .best_brands {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+    margin: 0;
+    max-height: 10%;
+    object-fit: contain;
+    margin-bottom: 1em;
+  }
+
+  .best_brands li{
+    padding: 0;
+    object-fit: cover;
+  }
+
+  /*footer*/
+  footer ul {
+    display: block;
+  }
+
+  footer ul li {
+    margin-bottom: 0.7em;
+  }
+
+  footer ul li:last-child {
+    font-size: 0.6em;
   }
 }
