@@ -599,7 +599,8 @@ body {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   /*navbar*/
   form .input-group,
-  .items-nav li:nth-child(1) {
+  .items-nav li:nth-child(1),
+  .items-nav li:nth-child(2) {
     display: none;
   }
 
@@ -637,5 +638,20 @@ body {
   .container {
     margin: 0 auto;
     padding: 0 1em;
+  }
+
+  .image_sections {
+    overflow-x: scroll;
+  }
+
+  .image_sections li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image_sections li a img {
+    height: 240px;
+    width: 166px;
+    gap: 0 1.5em;
   }
 }
