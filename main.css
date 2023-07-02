@@ -597,5 +597,21 @@ body {
 
 /*sm screen*/
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  /*navbar*/
+  form .input-group,
+  .items-nav li:nth-child(1) {
+    display: none;
+  }
 
+  .items-nav .item {
+    padding: 0.3em;
+  }
+
+  .left_navbar {
+    padding-right: 0;
+  }
+
+  .brand {
+    margin-right: 0;
+  }
 }
