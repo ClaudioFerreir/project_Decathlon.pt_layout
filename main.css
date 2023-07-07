@@ -575,6 +575,7 @@ body {
   /*image section*/
   .image_sections {
     overflow-x: scroll;
+    gap: 1em;
   }
 
   .image_sections li {
@@ -584,8 +585,7 @@ body {
 
   .image_sections li a img {
     height: 240px;
-    width: 166px;
-    gap: 0 1.5em;
+    width: 136px;
   }
 
   /*products section*/
@@ -646,6 +646,7 @@ body {
 
   footer ul li {
     margin-bottom: 0.7em;
+    font-size: 0.7em;
   }
 
   footer ul li:last-child {
