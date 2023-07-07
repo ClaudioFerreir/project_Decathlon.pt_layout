@@ -115,11 +115,33 @@
     </div>
     <!--Carousel-->
     <div class="main_banner">
-      <div class="carousel-images">
-        <img src="./images/brad-pearson-_lstXBllSIg-unsplash.jpg" alt="">
-        <img src="./images/john-arano-h4i9G-de7Po-unsplash.jpg" alt="">
-        <img src="./images/nina-luong-dy4QG5c5xWQ-unsplash.jpg" alt="">
-        <img src="./images/wheaton-simis-sBg4-N4vf4A-unsplash.jpg" alt="">
+      <div id="carousel" class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="./images/brad-pearson-_lstXBllSIg-unsplash.jpg" alt="pessoa sentada em um acampamento">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/john-arano-h4i9G-de7Po-unsplash.jpg" alt="mulher levanta pesso">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/nina-luong-dy4QG5c5xWQ-unsplash.jpg" alt="duas pessoas admirando uma paisagem">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./images/wheaton-simis-sBg4-N4vf4A-unsplash.jpg" alt="campo de atletismo">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+        </div>
       </div>
     </div>
     <!--Section Tags-->

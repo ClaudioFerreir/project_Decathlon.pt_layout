@@ -207,15 +207,14 @@ body {
     justify-content: center;
   }
 
-  .carousel-images {
-    z-index: -1;
+  #carousel {
     width: 100%;
   }
 
-  .carousel-images img {
-    width: 100%;
+  #carousel img {
     height: 80vh;
     object-fit: cover;
+    width: 100%;
   }
 
   /*container*/
@@ -527,7 +526,7 @@ body {
     grid-row: 2 / -1;
   }
 
-  /*sm screen*/
+/*sm screen*/
 @media screen and (max-width: 767px) {
   /*navbar*/
   form .input-group,
@@ -549,11 +548,11 @@ body {
   }
 
   /*carousel*/
-  .carousel {
-    height: 300px;
+  #carousel {
+    height: 60vh;
   }
 
-  .carousel-images img {
+  #carousel img {
     height: 60vh;
   }
 
